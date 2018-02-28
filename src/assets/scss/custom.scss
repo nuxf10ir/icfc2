@@ -1,0 +1,193 @@
+@import "customMixins";
+
+@font-face {
+  font-family: 'Lava-Bold';
+  src: url(../fonts/Lava-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Lava-Medium';
+  src: url(../fonts/Lava-Medium.otf);
+}
+
+@font-face {
+  font-family: 'Stem-Bold';
+  src: url(../fonts/Stem-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Stem-Medium';
+  src: url(../fonts/Stem-Medium.otf);
+}
+@font-face {
+  font-family: 'Stem-Regular';
+  src: url(../fonts/Stem-Regular.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Helios';
+  src: url(../fonts/HeliosCondC.otf);
+  font-weight: normal;
+}
+
+
+.page-wrapper {
+
+  @include xy-grid-container($global-width, 0);
+
+  height: 100vh;
+
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow:    0 0 10px 0 rgba(0, 0, 0, 0.75);
+  box-shadow:         0 0 10px 0 rgba(0, 0, 0, 0.75);
+
+}
+
+
+.page-top {
+  height: 168px;
+
+  background: $white;
+
+  padding: 40px 15px 0;
+}
+
+
+.page-header {
+
+  @include xy-grid(horizontal, false);
+
+
+  height: 60px;
+
+
+
+
+  .header-date {
+
+    @include xy-cell(3);
+
+    @include xy-cell-offset(1);
+
+    @include flex-align-self('middle');
+
+
+    font: bold 28px 'Lava-Bold', Arial;
+
+
+    .year {
+
+      font-size: 32px;
+
+    }
+
+
+  }
+
+  .header-place {
+
+    @include xy-cell(4);
+
+    @include flex-align-self('middle');
+
+
+    font: normal 27px 'Lava-Medium', Arial;
+
+    text-transform: uppercase;
+
+  }
+
+
+  .header-partners {
+
+    @include xy-cell(4);
+
+    @include xy-cell-offset(3);
+
+
+    font: normal 10px 'Stem-Regular', Arial, serif;
+
+    text-transform: uppercase;
+
+    color: $black;
+
+  }
+
+}
+
+
+.page-nav {
+
+  @include xy-grid(horizontal, false);
+
+  @include xy-cell(10);
+
+  @include xy-cell-offset(1);
+
+
+  margin-top: 13px;
+
+
+  .nav-link {
+
+    font-family: 'Stem-Regular', Arial, serif;
+
+    font-size: 14px;
+
+    text-transform: uppercase;
+
+    color: $black;
+
+    margin: 0 20px 0 0;
+
+
+    &:last-child {
+
+      margin: 0;
+
+    }
+
+
+    &.active {
+
+      font-family: 'Stem-Bold', Arial, serif;
+
+
+    }
+
+  }
+
+}
+
+
+.page-body {
+
+  height: 480px;
+
+  position: relative;
+
+  background: #01247d;
+  background: -webkit-linear-gradient(bottom right,#01247d,#0157c6);
+  background: -o-linear-gradient(bottom right,#01247d,#0157c6);
+  background: -moz-linear-gradient(bottom right,#01247d,#0157c6);
+  background: linear-gradient(to bottom right, #01247d, #0157c6);
+
+  -webkit-box-shadow: inset 0px 3px 6px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow:    inset 0px 3px 6px 0px rgba(0, 0, 0, 0.3);
+  box-shadow:         inset 0px 3px 6px 0px rgba(0, 0, 0, 0.3);
+
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 400px;
+    background: url(../img/palace.svg) 0 0 no-repeat;
+    height: 328px;
+    left: 37%;
+    bottom: 0;
+  }
+
+
+}

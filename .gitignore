@@ -1,0 +1,16 @@
+.DS_Store
+node_modules
+npm-debug.log
+bower_components
+dist
+*.swp
+
+.babelrc
+
+.idea/workspace.xml
+
+.idea/modules.xml
+
+.idea/misc.xml
+
+.idea/icfc2.iml
