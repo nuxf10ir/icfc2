@@ -6838,7 +6838,7 @@ article {
       margin-left: 0.9375rem;
       margin-left: calc(6.25% + 0.625rem);
       position: relative;
-      min-height: inherit; }
+      min-height: 480px; }
       @media print, screen and (min-width: 80em) {
         .index article .left-side {
           width: calc(43.75% - 1.875rem);
