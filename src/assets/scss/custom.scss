@@ -315,6 +315,8 @@
   -moz-box-shadow:    inset 0px 3px 6px 0px rgba(0, 0, 0, 0.3);
   box-shadow:         inset 0px 3px 6px 0px rgba(0, 0, 0, 0.3);
 
+  min-height: 480px;
+
 
   &:before {
 
@@ -339,7 +341,6 @@
 
   &:after {
 
-
     content: '';
 
     display: block;
@@ -350,6 +351,12 @@
 
     bottom: 0;
 
+  }
+
+
+
+
+  &.index:after {
 
     @include breakpoint(medium) {
 
@@ -378,12 +385,43 @@
 
     }
 
+  }
 
 
+  &.contacts:after {
+
+    background-size: cover;
 
 
+    @include breakpoint(medium) {
+
+      width: 40%;
+
+      right: 0;
+
+      height: 100%;
+
+      background-size: cover;
+
+      opacity: 0.2;
+
+    }
+
+
+    @include  breakpoint(large) {
+
+      width: 370px;
+
+      height: 390px;
+
+      right: 0;
+
+      opacity: 1;
+
+    }
 
   }
+
 
   padding: 0 15px;
 
@@ -396,7 +434,7 @@ article {
 
 
 
-  &.index {
+  .index & {
 
     @include xy-cell();
 
@@ -410,9 +448,6 @@ article {
       @include flex-direction(row)
 
     }
-
-
-    min-height: 480px;
 
 
     .left-side {
@@ -567,6 +602,80 @@ article {
 
 
     }
+
+
+  }
+
+
+  .contacts & {
+
+
+
+
+    @include xy-cell();
+
+    @include xy-grid-collapse();
+
+
+    @include breakpoint(large) {
+
+      @include flex-direction(row)
+
+    }
+
+
+
+
+      .contact-info__item {
+
+        @include xy-cell(4);
+
+        @include xy-cell-offset(1);
+
+
+        @include breakpoint(large) {
+
+          @include xy-cell(5);
+
+          @include xy-cell-offset(1);
+
+        }
+
+
+        color: $white;
+
+        margin-top: 290px;
+
+
+
+        .info-title {
+
+          font: normal 24px/39px 'Stem-Bold', Arial, serif;
+
+          letter-spacing: 1px;
+
+
+        }
+
+
+        .info-req {
+
+          line-height: 24px;
+
+          a {
+
+            color: $white;
+
+            text-decoration: underline;
+
+          }
+
+        }
+
+
+
+
+      }
 
 
   }
