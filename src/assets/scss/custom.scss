@@ -573,3 +573,97 @@ article {
 
 
 }
+
+.page-footer {
+
+  @include xy-grid(horizontal, false);
+
+  height: 118px;
+
+  align-items: center;
+
+  background: $white;
+
+
+
+
+  .footer-lang {
+
+    @include xy-cell(3);
+
+    @include xy-cell-offset(1);
+
+    @include breakpoint(large) {
+
+      @include xy-cell(2);
+
+      @include xy-cell-offset(1);
+
+    }
+
+
+    display: block;
+
+    width: 90px;
+
+    height: 13px;
+
+    background: url('../img/lang.png') no-repeat 0 0;
+
+  }
+
+
+  .footer-copyright {
+
+    @include xy-cell(6);
+
+
+    font: normal 12px 'Stem-Regular', Arial, serif;
+
+    color: $dark-blue;
+
+  }
+
+
+  .footer-videolink {
+
+    @include xy-cell(6);
+
+    @include xy-cell-offset(1);
+
+
+    @include breakpoint(large) {
+
+      @include xy-cell(4);
+
+      @include xy-cell-offset(3);
+
+    }
+
+
+    font: normal 25px 'Lava-Bold', Arial, serif;
+
+    color: #013aa2;
+
+
+    &:before {
+
+      content: '';
+
+      display: inline-block;
+
+      background: url('../img/play.svg') no-repeat 0 0;
+
+      width: 32px;
+
+      height: 32px;
+
+      vertical-align: text-top;
+
+    }
+
+  }
+
+
+
+}
