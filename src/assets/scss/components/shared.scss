@@ -1,0 +1,56 @@
+.lang-toggler {
+
+  display: block;
+
+  width: 90px;
+
+  height: 13px;
+
+  background: url('../img/lang_rus-eng_blue.svg') no-repeat 0 0;
+
+
+  .page-top & {
+
+    position: absolute;
+
+    top: 55px;
+
+    right: 30px;
+
+
+    @include breakpoint(medium) {
+
+      top: 65px;
+
+    }
+
+
+    @include breakpoint(large) {
+
+      display: none;
+
+    }
+
+
+  }
+
+
+  .footer & {
+
+    @include xy-cell(3);
+
+    @include xy-cell-offset(1);
+
+    @include breakpoint(large) {
+
+      @include xy-cell(2);
+
+      @include xy-cell-offset(1);
+
+    }
+
+  }
+
+}
+
+

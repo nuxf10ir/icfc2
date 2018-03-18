@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import 'lightbox2/dist/js/lightbox';
 import whatInput from 'what-input';
 
 window.$ = $;

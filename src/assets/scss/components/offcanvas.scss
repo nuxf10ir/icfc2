@@ -1,0 +1,85 @@
+.offcanvas-full-screen {
+
+  @include off-canvas-base($background: $white, $transition: 0.3s ease-in-out);
+
+  @include off-canvas-position(top);
+
+  height: 322px;
+
+}
+
+
+.offcanvas-full-screen-inner {
+
+  padding: 1rem;
+
+  text-align: left;
+
+}
+
+
+.offcanvas-full-screen-menu {
+
+  @include menu-base;
+
+  @include menu-direction(vertical);
+
+  margin-top: 60px;
+
+  .menu-link {
+
+    color: $black;
+
+    text-transform: uppercase;
+
+    &:hover,
+    &.active {
+
+      font-weight: bold;
+
+    }
+
+  }
+
+}
+
+
+.offcanvas-full-screen-close {
+
+  position: absolute;
+
+  color: $dark-blue;
+
+  left: 30px;
+
+  font-size: 3rem;
+
+  &:hover {
+    color: darken($white, 30%);
+  }
+
+}
+
+
+.menu-icon {
+
+  @include xy-cell(1);
+
+  @include xy-cell-offset(1);
+
+  margin-top: 13px;
+
+  @include breakpoint(smedium) {
+
+    display: none !important;
+
+  }
+
+  &.dark:after {
+
+    background: $dark-blue;
+    box-shadow: 0 7px 0 $dark-blue, 0 14px 0 $dark-blue
+
+  }
+
+}
