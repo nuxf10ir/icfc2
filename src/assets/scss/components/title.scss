@@ -1,12 +1,12 @@
 .cfo-title {
 
-  content: '';
-
   display: block;
 
   position: absolute;
 
   width: 100%;
+
+  max-width: 640px;
 
   height: 120px;
 
@@ -19,8 +19,6 @@
   @include breakpoint(large) {
 
     margin-left: 0;
-
-    width: 640px;
 
   }
 
