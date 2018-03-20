@@ -1,0 +1,87 @@
+{
+  "ru": {
+    "pages": [
+      {
+        "type": "index",
+        "title": "О конференции"
+      },
+      {
+        "type": "program",
+        "title": "Программа"
+      },
+      {
+        "type": "speakers",
+        "title": "Спикеры"
+      },
+      {
+        "type": "partners",
+        "title": "Партнеры"
+      },
+      {
+        "type": "place",
+        "title": "Место проведения"
+      },
+      {
+        "type": "contacts",
+        "title": "Контакты"
+      }
+    ],
+    "header": {
+      "date": "1 июня",
+      "place": "САНКТ-ПЕТЕРБУРГ"
+    },
+    "footer": {
+      "photohistory": "Как это было в 2017",
+      "videoreport": "Видеоотчёт 2017"
+    },
+    "common": {
+      "organizer": "Организатор",
+      "partner": "Генеральный партнер",
+      "switch": "rus-eng",
+      "switchto": "/en/"
+    }
+  },
+
+  "en": {
+    "pages": [
+      {
+        "type": "index",
+        "title": "About"
+      },
+      {
+        "type": "program",
+        "title": "Program"
+      },
+      {
+        "type": "speakers",
+        "title": "Speakers"
+      },
+      {
+        "type": "partners",
+        "title": "Partners"
+      },
+      {
+        "type": "place",
+        "title": "Conference Venue"
+      },
+      {
+        "type": "contacts",
+        "title": "Contact Us"
+     }
+    ],
+    "header": {
+      "date": "June 1,",
+      "place": "SAINT-PETERSBURG"
+    },
+    "footer": {
+      "photohistory": "How it was in 2017",
+      "videoreport": "Video report"
+    },
+    "common": {
+      "organizer": "Organizer",
+      "partner": "General Partner",
+      "switch": "eng-rus",
+      "switchto": "/"
+    }
+  }
+}

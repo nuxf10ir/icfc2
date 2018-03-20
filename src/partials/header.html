@@ -3,27 +3,31 @@
 <header class="page-header">
 
     <div class="header-date">
-        1 июня <span class="year">2018</span>
+        {{header.date}} <span class="year">2018</span>
     </div>
 
     <div class="header-place">
-        Санкт-Петербург
+        {{header.place}}
     </div>
 
     <div class="header-partners">
-        <a class="header-partner header-partner__type-organizer" href="/">Организатор</a>
-        <a class="header-partner header-partner__type-partner" href="/">Генеральный партнер</a>
+        <a class="header-partner header-partner__type-organizer" href="/">{{common.organizer}}</a>
+        <a class="header-partner header-partner__type-partner" href="/">{{common.partner}}</a>
     </div>
 
 </header>
 
 <nav class="page-nav">
-    <a class="nav-link active" href="index.html">О конференции</a>
-    <a class="nav-link" href="program.html">Программа</a>
-    <a class="nav-link" href="speakers.html">Спикеры</a>
-    <a class="nav-link" href="partners.html">Партнеры</a>
-    <a class="nav-link" href="place.html">Место проведения</a>
-    <a class="nav-link" href="contacts.html">Контакты</a>
+
+    {{#each pages}}
+
+        <a class="nav-link {{#ifpage this.type}}active{{/ifpage}}"
+           href="{{this.type}}.html">
+            {{this.title}}
+        </a>
+
+    {{/each}}
+
 </nav>
 
-<a class="lang-toggler" href="/en/"></a>
+<a class="lang-toggler lang-toggler__type-{{common.switch}}" href="{{common.switchto}}"></a>

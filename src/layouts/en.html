@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International conference for CFOs and planning, performance management. {{title}}</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css" />
+  </head>
+
+    <body class="page__lang-eng">
+
+
+      <div id="offcanvas-full-screen"
+           class="offcanvas-full-screen"
+           data-off-canvas data-transition="overlap">
+
+          <div class="offcanvas-full-screen-inner">
+
+              {{> menu pages=lang.en.pages}}
+
+          </div>
+
+      </div>
+
+      <div class="off-canvas-content"
+           data-off-canvas-content>
+
+          <div class="page page__type-{{page}}">
+
+              <div class="page-top">
+                  <div class="page-top__in">
+                      {{> header pages=lang.en.pages header=lang.en.header common=lang.en.common}}
+                </div>
+              </div>
+
+              <div class="page-body">
+                  <div class="page-body__in">
+                      <article>
+                          {{> body}}
+                      </article>
+                  </div>
+              </div>
+
+              <div class="page-footer">
+                  <div class="page-footer__in">
+                      {{> footer footer=lang.en.footer common=lang.en.common}}
+                  </div>
+              </div>
+
+          </div>
+
+      </div>
+
+      {{> videomodal  videolang="eng"}}
+
+      <script src="{{root}}assets/js/app.js"></script>
+
+  </body>
+
+</html>

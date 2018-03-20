@@ -54,6 +54,9 @@ function pages() {
     .pipe(panini({
       root: 'src/pages/',
       layouts: 'src/layouts/',
+      pageLayouts: {
+          'en': 'en'
+      },
       partials: 'src/partials/',
       data: 'src/data/',
       helpers: 'src/helpers/'

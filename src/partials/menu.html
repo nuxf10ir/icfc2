@@ -1,24 +1,23 @@
-<button class="offcanvas-full-screen-close" aria-label="Close menu" type="button" data-close>
-    <span aria-hidden="true">&times;</span>
+<button class="offcanvas-full-screen-close"
+        type="button"
+        data-close>
+
+    <span>&times;</span>
+
 </button>
 
 <ul class="offcanvas-full-screen-menu">
-    <li>
-        <a class="menu-link active" href="index.html">О конференции</a>
-    </li>
-    <li>
-        <a class="menu-link" href="program.html">Программа</a>
-    </li>
-    <li>
-        <a class="menu-link" href="speakers.html">Спикеры</a>
-    </li>
-    <li>
-        <a class="menu-link" href="partners.html">Партнеры</a>
-    </li>
-    <li>
-        <a class="menu-link" href="place.html">Место проведения</a>
-    </li>
-    <li>
-        <a class="menu-link" href="contacts.html">Контакты</a>
-    </li>
+
+    {{#each pages}}
+
+        <li>
+
+            <a class="menu-link {{#ifpage this.type}}active{{/ifpage}}"
+               href="{{this.type}}.html">
+                {{this.title}}
+            </a>
+        </li>
+
+    {{/each}}
+
 </ul>

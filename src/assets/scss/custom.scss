@@ -132,7 +132,7 @@ article {
 
     height: 120px;
 
-    background: url('../img/cfo.svg') no-repeat 0 0;
+
 
     top: 83px;
 
@@ -145,6 +145,18 @@ article {
       margin-left: 0;
 
       width: 640px;
+
+    }
+
+    .page__lang-rus & {
+
+      background: url('../img/cfo_rus.svg') no-repeat 0 0;
+
+    }
+
+    .page__lang-eng & {
+
+      background: url('../img/cfo_eng.svg') no-repeat 0 0;
 
     }
 
@@ -389,7 +401,7 @@ article {
 
       }
 
-      @include breakpoint(smedium) {
+      @include breakpoint(medium) {
 
         @include xy-cell(8);
 
@@ -761,28 +773,7 @@ article {
 
 
 
-      .footer-lang {
 
-        display: none;
-
-        @include breakpoint(large) {
-
-          display: block;
-
-          @include xy-cell(2, true, 0);
-
-
-        }
-
-
-
-        width: 90px;
-
-        height: 13px;
-
-        background: url('../img/lang_rus-eng_blue.svg') no-repeat 0 0;
-
-      }
 
 
       .footer-copyright {

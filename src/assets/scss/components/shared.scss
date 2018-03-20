@@ -1,15 +1,31 @@
 .lang-toggler {
 
-  display: block;
+
 
   width: 90px;
 
   height: 13px;
 
-  background: url('../img/lang_rus-eng_blue.svg') no-repeat 0 0;
+  cursor: pointer;
+
+  &.lang-toggler__type-rus-eng {
+
+    background: url('../img/lang_rus-eng_blue.svg') no-repeat 0 0;
+
+  }
+
+  &.lang-toggler__type-eng-rus {
+
+    background: url('../img/lang_eng-rus_blue.svg') no-repeat 0 0;
+
+  }
+
+
 
 
   .page-top & {
+
+    display: block;
 
     position: absolute;
 
@@ -35,17 +51,15 @@
   }
 
 
-  .footer & {
+  .page-footer & {
 
-    @include xy-cell(3);
-
-    @include xy-cell-offset(1);
+    display: none;
 
     @include breakpoint(large) {
 
-      @include xy-cell(2);
+      display: block;
 
-      @include xy-cell-offset(1);
+      @include xy-cell(2, true, 0);
 
     }
 
