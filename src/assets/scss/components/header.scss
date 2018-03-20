@@ -77,7 +77,9 @@
   .header-place {
 
 
-    @include xy-cell(12);
+    @include xy-cell(15);
+
+    @include xy-cell-offset(1);
 
     margin-top: 15px;
 
@@ -133,7 +135,7 @@
 
       height: 37px;
 
-      margin-left: 30px;
+      margin-left: 0;
 
       background: url('../img/anchor.svg') no-repeat 0 0;
 
@@ -210,7 +212,7 @@
 
       &.header-partner__type-organizer {
 
-        background-position: 0 17px;
+        background-position: 0;
 
         background-image: url('../img/organizer.svg');
 
