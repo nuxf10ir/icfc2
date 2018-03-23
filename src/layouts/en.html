@@ -53,7 +53,16 @@
 
                       </article>
 
+                      {{#ifpage 'place'}}
 
+                      <div class="article-footer">
+                          <div class="article-footer__in">
+                              {{> article-footer footer=lang.ru.footer common=lang.ru.common}}
+                          </div>
+                      </div>
+
+
+                      {{/ifpage}}
 
 
                   </div>
