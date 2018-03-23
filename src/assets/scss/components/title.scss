@@ -2,6 +2,36 @@
 
   display: block;
 
+  position: relative;
+
+
+  min-height: 300px;
+
+
+  @include breakpoint(smedium) {
+
+    min-height: 390px;
+
+  }
+
+
+  @include breakpoint(large) {
+
+    min-height: 290px;
+
+  }
+
+
+
+
+
+}
+
+
+.cfo-title__in {
+
+  display: block;
+
   position: absolute;
 
   width: 100%;
@@ -10,7 +40,7 @@
 
   height: 120px;
 
-  top: 83px;
+  top: 84px;
 
   left: 0;
 
@@ -36,10 +66,21 @@
 
     left: calc(#{xy-cell-size(1)} + #{rem-calc($-zf-bp-value) / 2});
 
-    bottom: -60px;
+    bottom: -75px;
+
+    max-width: 330px;
 
 
-    @include breakpoint(large) {
+    @include breakpoint(smedium) {
+
+      bottom: -112px;
+
+      max-width: 500px;
+
+    }
+
+
+    @include breakpoint(medium) {
 
       left: 100%;
 
@@ -51,24 +92,35 @@
     }
 
 
+    @include breakpoint(large) {
+
+      max-width: 500px;
+
+      width: 500px;
+
+    }
 
 
 
-    font: normal 38px 'Stem-Bold';
+    span {
 
-    color: #013aa2;
+      font: normal 38px 'Stem-Bold';
 
-    background: white;
+      color: #013aa2;
 
-    text-transform: uppercase;
+      background: white;
 
-    padding: 5px 20px 0 10px;
+      text-transform: uppercase;
 
-    line-height: 38px;
+      padding: 5px 0 0;
 
+      line-height: 50px;
 
+      letter-spacing: 3px;
 
-    letter-spacing: 3px;
+      box-shadow: 10px 0 0px 0px $white, -10px 0 0px 0px $white;
+
+    }
 
 
   }

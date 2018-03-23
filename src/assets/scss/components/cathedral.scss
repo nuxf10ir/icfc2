@@ -1,0 +1,59 @@
+.cathedral {
+
+  content: '';
+
+  display: block;
+
+
+  bottom: 0;
+
+
+
+  .page__type-index & {
+
+
+    width: 100%;
+
+    left: 0;
+
+    position: relative;
+
+    margin : 250px 0 75px 35px;
+
+    max-width: 500px;
+
+
+
+
+    @include breakpoint(medium) {
+
+      width: 450px;
+
+      margin-top: 0;
+
+      position: absolute;
+
+      left: 45%;
+
+      top: 120px;
+
+
+
+    }
+
+
+    @include  breakpoint(large) {
+
+
+      left: 66%;
+
+      bottom: 0;
+
+
+    }
+
+  }
+
+
+
+}

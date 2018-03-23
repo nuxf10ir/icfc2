@@ -21,6 +21,19 @@
   }
 
 
+  &.lang-toggler__type-rus-eng.lang-toggler__type-inverse {
+
+    background: url('../img/lang_rus-eng_white.svg') no-repeat 0 0;
+
+  }
+
+  &.lang-toggler__type-eng-rus.lang-toggler__type-inverse {
+
+    background: url('../img/lang_eng-rus_white.svg') no-repeat 0 0;
+
+  }
+
+
 
 
   .page-top & {
@@ -51,7 +64,8 @@
   }
 
 
-  .page-footer & {
+  .page-footer &,
+  .article-footer & {
 
     display: none;
 
@@ -64,6 +78,7 @@
     }
 
   }
+
 
 }
 

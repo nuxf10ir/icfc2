@@ -1,0 +1,62 @@
+.article-footer {
+
+  color: $white;
+
+  @include xy-grid-container($global-width, 0);
+
+
+  .article-footer__in {
+
+    min-height: 150px;
+
+    @include xy-grid(horizontal, false);
+
+    @include xy-cell(15);
+
+    @include xy-cell-offset(1);
+
+    align-items: center;
+
+
+    @include breakpoint(medium) {
+
+      min-height: 130px;
+
+    }
+
+
+    .copyright {
+
+      font: normal 12px 'Stem-Regular', Arial, serif;
+
+      max-width: 80%;
+
+
+      @include breakpoint(smedium) {
+
+        max-width: 30%;
+
+      }
+
+
+      @include breakpoint(large) {
+
+        max-width: 50%;
+
+      }
+
+
+    }
+
+
+
+
+
+
+  }
+
+}
+
+
+
+

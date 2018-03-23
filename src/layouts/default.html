@@ -38,29 +38,52 @@
 
               <div class="page-body">
                   <div class="page-body__in">
-                      <article>
 
-                          <div class="cfo-title">
-                              <div class="page-title">{{title}}</div>
+                      <div class="cfo-title">
+                          <div class="cfo-title__in">
+                              <div class="page-title">
+                                  <span>{{title}}</span>
+                              </div>
                           </div>
+                      </div>
+
+                      <article>
 
                           {{> body}}
 
                       </article>
+
+                      {{#ifpage 'place'}}
+
+                      <div class="article-footer">
+                          <div class="article-footer__in">
+                              {{> article-footer footer=lang.ru.footer common=lang.ru.common}}
+                          </div>
+                      </div>
+
+
+                      {{/ifpage}}
+
+
                   </div>
               </div>
 
-              <div class="page-footer">
-                  <div class="page-footer__in">
-                      {{> footer footer=lang.ru.footer common=lang.ru.common}}
+
+              {{#ifpage 'index' 'contacts'}}
+                  <div class="page-footer">
+                      <div class="page-footer__in">
+                          {{> footer footer=lang.ru.footer common=lang.ru.common}}
+                          {{> videomodal  videolang="rus"}}
+                      </div>
                   </div>
-              </div>
+              {{/ifpage}}
+
 
           </div>
 
       </div>
 
-      {{> videomodal  videolang="rus"}}
+
 
       <script src="{{root}}assets/js/app.js"></script>
 
