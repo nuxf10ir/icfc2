@@ -16,3 +16,7 @@ bower_components
 .idea/icfc2.iml
 
 .idea/vcs.xml
+
+dist.zip
+
+docs.zip
