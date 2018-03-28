@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>International conference for CFOs and planning, performance management. {{title}}</title>
+    <title>Международная конференция финансовых директоров. {{title}}</title>
     <link rel="stylesheet" href="{{root}}assets/css/app.css" />
   </head>
 
@@ -30,7 +30,7 @@
 
           <div class="page page__type-{{page}}">
 
-              <div class="page-top">
+              <div class="page-top" data-sticky data-options="marginTop:0;stickyOn: small only">
                   <div class="page-top__in">
                       {{> header pages=lang.ru.pages header=lang.ru.header common=lang.ru.common}}
                 </div>
@@ -53,7 +53,7 @@
 
                       </article>
 
-                      {{#ifpage 'place'}}
+                      {{#ifpage 'place' 'contacts'}}
 
                       <div class="article-footer">
                           <div class="article-footer__in">
@@ -66,10 +66,20 @@
 
 
                   </div>
+
+                  {{#ifpage 'place' 'contacts'}}
+
+                    <div class="cathedral"></div>
+
+                  {{/ifpage}}
+
+
               </div>
 
 
-              {{#ifpage 'index' 'contacts'}}
+
+
+              {{#ifpage 'index'}}
                   <div class="page-footer">
                       <div class="page-footer__in">
                           {{> footer footer=lang.ru.footer common=lang.ru.common}}
@@ -82,8 +92,6 @@
           </div>
 
       </div>
-
-
 
       <script src="{{root}}assets/js/app.js"></script>
 

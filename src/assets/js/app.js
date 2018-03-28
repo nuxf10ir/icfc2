@@ -11,3 +11,14 @@ import Foundation from 'foundation-sites';
 
 
 $(document).foundation();
+
+
+
+$('.page-top')
+    .on('sticky.zf.stuckto:top', function(){
+        $(this).addClass('shrink');
+    })
+    .on('sticky.zf.unstuckfrom:top',
+        function(){
+            $(this).removeClass('shrink');
+        });

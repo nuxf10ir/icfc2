@@ -1,0 +1,52 @@
+.contacts__wrapper {
+
+  overflow: hidden;
+
+}
+
+
+.contact-info__item {
+
+  color: $white;
+
+  margin-bottom: 50px;
+
+
+  @include breakpoint(smedium) {
+
+    width: 380px;
+
+    margin-right: 70px;
+
+    float: left;
+
+  }
+
+
+  .info-title {
+
+    font: normal 24px/39px 'Stem-Bold', Arial, serif;
+
+    letter-spacing: 1px;
+
+  }
+
+
+  .info-req {
+
+    line-height: 24px;
+
+    a {
+
+      color: $white;
+
+      text-decoration: underline;
+
+    }
+
+  }
+
+
+
+
+}

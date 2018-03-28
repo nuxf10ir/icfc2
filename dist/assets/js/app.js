@@ -14587,6 +14587,12 @@ window.$ = _jquery2.default;
 
 (0, _jquery2.default)(document).foundation();
 
+(0, _jquery2.default)('.page-top').on('sticky.zf.stuckto:top', function () {
+    (0, _jquery2.default)(this).addClass('shrink');
+}).on('sticky.zf.unstuckfrom:top', function () {
+    (0, _jquery2.default)(this).removeClass('shrink');
+});
+
 /***/ }),
 /* 21 */
 /***/ (function(module, exports, __webpack_require__) {

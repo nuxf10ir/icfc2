@@ -1,3 +1,4 @@
+/*
 .cathedral {
 
   content: '';
@@ -53,6 +54,56 @@
     }
 
   }
+
+
+
+}*/
+
+
+.cathedral {
+
+  display: block;
+
+  position: absolute;
+
+  width: 300px;
+
+  height: 396px;
+
+  background: url(../img/cathedral_white.svg) no-repeat 0 0;
+
+  background-size: cover;
+
+  bottom: 150px;
+
+  right: 0;
+
+
+  .page__type-contacts & {
+
+    display: none;
+
+    @include breakpoint(smedium) {
+
+      display: block;
+
+    }
+
+
+  }
+
+
+  @include breakpoint(smedium) {
+
+    width: 395px;
+
+    bottom: 0;
+
+  }
+
+
+
+
 
 
 

@@ -4,19 +4,31 @@
 
   position: relative;
 
+  height: 300px;
 
-  min-height: 300px;
+
+  .page__type-index & {
+
+    height: 152px;
+
+  }
 
 
   @include breakpoint(smedium) {
 
-    min-height: 390px;
+    .page__type-index & {
+
+      height: 250px;
+
+    }
+
+    height: 390px;
 
   }
 
   @include breakpoint(medium) {
 
-    min-height: 290px;
+    height: 290px;
 
   }
 
@@ -40,23 +52,31 @@
 
   position: absolute;
 
-  width: 100%;
+  width: 380px;
 
-  max-width: 640px;
+  height: 70px;
 
-  height: 120px;
+  top: 42px;
 
-  top: 84px;
+  margin-left: -66px;
 
-  left: 0;
+  padding-left: 66px;
 
-  margin-left: -15px;
+  @include breakpoint(smedium) {
 
-  @include breakpoint(large) {
+    width: 660px;
 
-    margin-left: 0;
+    height: 120px;
+
+    margin-left: -114px;
+
+    padding-left: 114px;
+
+    top: 77px;
 
   }
+
+
 
   .page-title {
 
@@ -70,18 +90,20 @@
 
     position: absolute;
 
-    left: calc(#{xy-cell-size(1)} + #{rem-calc($-zf-bp-value) / 2});
+    left: 77px;
 
-    bottom: -75px;
+    bottom: -136px;
 
     max-width: 330px;
 
 
     @include breakpoint(smedium) {
 
-      bottom: -112px;
+      bottom: -115px;
 
       max-width: 500px;
+
+      left: 124px;
 
     }
 
@@ -90,7 +112,7 @@
 
       left: 100%;
 
-      margin: 0 0 0 50px;
+      margin: -3px 0 0 27px;
 
       bottom: auto;
 
@@ -110,7 +132,7 @@
 
     span {
 
-      font: normal 38px 'Stem-Bold';
+      font: normal 37px 'Stem-Bold';
 
       color: #013aa2;
 
@@ -122,7 +144,7 @@
 
       line-height: 50px;
 
-      letter-spacing: 3px;
+      letter-spacing: 0;
 
       box-shadow: 10px 0 0px 0px $white, -10px 0 0px 0px $white;
 

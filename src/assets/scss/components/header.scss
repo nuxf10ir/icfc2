@@ -1,68 +1,50 @@
 .page-header {
 
+  align-items: center;
 
+  position: relative;
+
+  padding: 72px 0 0 0;
+
+  display: flex;
+
+  font: normal 28px 'Lava-Medium', Arial;
+
+  height: 130px;
+
+  flex-wrap: wrap;
+
+
+  @include breakpoint(smedium) {
+
+    padding: 28px 0 0 0;
+
+  }
 
   @include breakpoint(medium) {
 
-    @include xy-grid(horizontal, false);
+    height: 111px;
+
+    flex-wrap: nowrap;
 
   }
 
 
-  height: 60px;
-
-  align-items: center;
-
-
-
-
   .header-date {
 
-    @include xy-cell(14);
+    .shrink & {
 
-    @include xy-cell-offset(1);
-
-    margin-top: 20px;
-
-
-
-    @include breakpoint(smedium) {
-
-      @include xy-cell(14);
-
-      @include xy-cell-offset(1);
-
-      margin-top: 0;
+      display: none;
 
     }
 
-
-    @include breakpoint(medium) {
-
-      @include xy-cell(4);
-
-      @include xy-cell-offset(1);
-
-    }
-
-    @include breakpoint(large) {
-
-      @include xy-cell(3);
-
-      @include xy-cell-offset(1);
-
-    }
-
-
-
-
-
-    @include flex-align-self('middle');
-
-
-    font: bold 28px 'Lava-Bold', Arial;
+    font-family: 'Lava-Bold', Arial, serif;
 
     letter-spacing: 1px;
+
+    margin-right: 56px;
+
+    width: 100%;
 
 
     .year {
@@ -72,57 +54,46 @@
     }
 
 
+    @include breakpoint(medium) {
+
+      width: auto;
+
+    }
+
+
   }
+
 
   .header-place {
 
+    .shrink & {
 
-    @include xy-cell(15);
+      display: none;
 
-    @include xy-cell-offset(1);
+    }
 
-    margin-top: 15px;
+    padding-top: 18px;
+
+
+    text-transform: uppercase;
+
+    width: 100%;
+
+    font-size: 27px;
 
 
     @include breakpoint(smedium) {
 
-      @include xy-cell(14);
-
-      @include xy-cell-offset(1);
-
-
+      padding-top: 0;
 
     }
 
 
     @include breakpoint(medium) {
 
-      margin-top: 0;
-
-      @include xy-cell(8);
+      width: auto;
 
     }
-
-    @include breakpoint(large) {
-
-      @include xy-cell(6);
-
-    }
-
-
-
-
-
-    @include flex-align-self('middle');
-
-
-    font: normal 27px 'Lava-Medium', Arial;
-
-    text-transform: uppercase;
-
-    position: relative;
-
-    letter-spacing: 1px;
 
 
     &:before {
@@ -135,7 +106,7 @@
 
       height: 37px;
 
-      margin-left: 0;
+
 
       background: url('../img/anchor.svg') no-repeat 0 0;
 
@@ -143,11 +114,7 @@
 
       vertical-align: text-bottom;
 
-      @include breakpoint(smedium) {
-
-        margin-left: -11px;
-
-      }
+      margin-left: -9px;
 
 
 
@@ -166,11 +133,13 @@
 
     @include breakpoint(large) {
 
-      @include xy-cell(5);
+      display: block;
 
-      @include xy-cell-offset(1);
+      position: absolute;
 
-      display: flex;
+      right: -36px;
+
+      top: 39px;
 
     }
 
@@ -181,18 +150,14 @@
 
     color: $black;
 
-    position: relative;
-
 
     .header-partner {
 
-      float: left;
+      display: inline-block;
 
-      display: block;
+      padding-top: 75px;
 
-      padding-top: 70px;
-
-      width: 140px;
+      width: 144px;
 
       background-position: 0 0;
 
@@ -202,7 +167,7 @@
 
       background-size: contain;
 
-      margin-left: 30px;
+      letter-spacing: 0.6px;
 
 
       &:hover {
@@ -212,18 +177,16 @@
 
       &.header-partner__type-organizer {
 
-        background-position: 0;
+        background: url('../img/organizer.svg') no-repeat 0px 17px;
 
-        background-image: url('../img/organizer.svg');
+        margin-right: 40px;
 
       }
 
 
       &.header-partner__type-partner {
 
-        background-position: -18px -5px;
-
-        background-image: url('../img/partner.svg');
+        background: url('../img/partner.svg') no-repeat -18px -5px;
 
       }
 
@@ -243,74 +206,47 @@
 
   display: none;
 
+  line-height: 20px;
+
+  margin-top: 12px;
+
 
   @include breakpoint(smedium) {
 
     display: block;
 
-    @include xy-cell(11);
-
-    @include xy-cell-offset(1);
+    max-width: 470px;
 
   }
 
   @include breakpoint(medium) {
 
-    @include xy-cell(9);
-
-    @include xy-cell-offset(1);
+    margin-top: 0;
 
   }
-
 
   @include breakpoint(large) {
 
-    @include xy-cell(15);
+    display: block;
 
-    @include xy-cell-offset(1);
-
-  }
-
-
-
-
-  margin-top: 45px;
-
-
-  @include breakpoint(medium) {
-
-    margin-top: 13px;
+    max-width: 100%;
 
   }
-
-
-  @include breakpoint(large) {
-
-
-
-  }
-
-
-
-
-
 
 
   .nav-link {
 
-    font-family: 'Stem-Regular', Arial, serif;
-
-    font-size: 14px;
+    font: normal 14px/14px 'Stem-Regular', Arial, serif;
 
     text-transform: uppercase;
 
     color: $black;
 
-    margin: 0 20px 0 0;
-
-    letter-spacing: .04em;
+    margin: 0 17px 0 0;
 
     white-space: nowrap;
+
+    line-height: 25px;
 
 
     &:last-child {

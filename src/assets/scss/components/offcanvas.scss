@@ -63,11 +63,13 @@
 
 .menu-icon {
 
-  @include xy-cell(1);
+  position: absolute !important;
 
-  @include xy-cell-offset(1);
+  top: 25px;
 
-  margin-top: 13px;
+  left: 23px;
+
+  width: 16px;
 
   @include breakpoint(smedium) {
 
@@ -78,7 +80,7 @@
   &.dark:after {
 
     background: $dark-blue;
-    box-shadow: 0 7px 0 $dark-blue, 0 14px 0 $dark-blue
+    box-shadow: 0 5px 0 $dark-blue, 0 10px 0 $dark-blue
 
   }
 

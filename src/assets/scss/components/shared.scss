@@ -4,7 +4,7 @@
 
   width: 90px;
 
-  height: 13px;
+  height: 15px;
 
   cursor: pointer;
 
@@ -42,14 +42,24 @@
 
     position: absolute;
 
-    top: 55px;
+    top: 24px;
 
-    right: 30px;
+    right: 26px;
+
+
+
+    @include breakpoint(smedium) {
+
+      top: 55px;
+
+      right: 60px;
+
+    }
 
 
     @include breakpoint(medium) {
 
-      top: 65px;
+      top: 67px;
 
     }
 
@@ -73,7 +83,7 @@
 
       display: block;
 
-      @include xy-cell(2, true, 0);
+      margin-right: 32px;
 
     }
 

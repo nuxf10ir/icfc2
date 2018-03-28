@@ -1,0 +1,258 @@
+.index__wrapper {
+
+  position: relative;
+
+
+  @include breakpoint(medium) {
+
+    height: 615px;
+
+  }
+
+  @include breakpoint(large) {
+
+    height: 194px;
+
+  }
+
+}
+
+
+.cathedral-index {
+
+  display: block;
+
+  width: 100%;
+
+  position: relative;
+
+  @include breakpoint(smedium) {
+
+    width: 442px;
+
+    margin-left: -15px;
+
+  }
+
+  @include breakpoint(medium) {
+
+    position: absolute;
+
+    margin: 0;
+
+    top: -175px;
+
+    right: 0
+
+  }
+
+
+  @include  breakpoint(large) {
+
+    top: -168px;
+
+    right: 27%;
+
+  }
+
+
+
+}
+
+
+
+
+.invite {
+
+  width: 230px;
+
+  position: relative;
+
+  font: normal 16px/21px 'Stem-Regular', Arial, serif;
+
+  text-transform: uppercase;
+
+  color: $white;
+
+  margin-top: 48px;
+
+  letter-spacing: 0.5px;
+
+  @include breakpoint(smedium) {
+
+    width: 350px;
+
+    margin-top: 78px;
+
+  }
+
+  @include breakpoint(medium) {
+
+    margin: 0;
+
+    position: absolute;
+
+    left: 0;
+
+    top: -64px;
+
+  }
+
+  @include breakpoint(medium) {
+
+    top: -33px;
+
+  }
+
+
+  .invite-link {
+
+     display: block;
+
+     width: 238px;
+
+     height: 60px;
+
+     background: url('../img/invite.svg') no-repeat 0 0;
+
+     margin-top: 23px;
+
+
+     &:hover {
+
+       background: url('../img/invite-hover.svg') no-repeat 0 0;
+
+     }
+
+
+   }
+
+
+}
+
+
+
+
+.info-block__list {
+
+  display: block;
+
+  position: relative;
+
+  margin: 30px 0 0 0;
+
+  padding: 0 0 40px 0;
+
+  list-style: none;
+
+  color: $white;
+
+  width: auto;
+
+
+
+  @include breakpoint(smedium) {
+
+    width: 450px;
+
+  }
+
+  @include breakpoint(medium) {
+
+    margin: 0;
+
+    position: absolute;
+
+    right: 0;
+
+    top: 206px;
+
+  }
+
+
+  @include  breakpoint(large) {
+
+    top: -238px;
+
+    right: -55px;
+
+
+  }
+
+
+  .info-block__item {
+
+    @include flex();
+
+    @include flex-direction(column);
+
+    padding-bottom: 25px;
+
+
+    @include breakpoint(smedium) {
+
+      @include flex-direction(row);
+
+    }
+
+
+    @include breakpoint(smedium) {
+
+      padding-bottom: 0;
+
+    }
+
+
+
+
+
+
+    .info-block__date {
+
+      width: 200px;
+
+      margin-right: 30px;
+
+      font: normal 99px 'Lava-Medium', Arial, serif;
+
+      text-align: left;
+
+      @include flex-align-self(left);
+
+
+      @include breakpoint(smedium) {
+
+        text-align: right;
+
+        @include flex-align-self(middle);
+
+      }
+
+    }
+
+
+    .info-block__text {
+
+      width: 220px;
+
+      font: normal 13px/17px 'Stem-Regular', Arial, serif;
+
+      text-transform: uppercase;
+
+      @include flex-align-self(left);
+
+
+      @include breakpoint(smedium) {
+
+        @include flex-align-self(middle);
+
+      }
+
+    }
+
+
+  }
+
+
+
+}

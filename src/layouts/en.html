@@ -30,7 +30,7 @@
 
           <div class="page page__type-{{page}}">
 
-              <div class="page-top">
+              <div class="page-top" data-sticky data-options="marginTop:0;stickyOn: small only">
                   <div class="page-top__in">
                       {{> header pages=lang.en.pages header=lang.en.header common=lang.en.common}}
                 </div>
@@ -53,7 +53,7 @@
 
                       </article>
 
-                      {{#ifpage 'place'}}
+                      {{#ifpage 'place' 'contacts'}}
 
                       <div class="article-footer">
                           <div class="article-footer__in">
@@ -66,22 +66,32 @@
 
 
                   </div>
+
+                  {{#ifpage 'place' 'contacts'}}
+
+                    <div class="cathedral"></div>
+
+                  {{/ifpage}}
+
+
               </div>
 
 
-              {{#ifpage 'index' 'contacts'}}
+
+
+              {{#ifpage 'index'}}
                   <div class="page-footer">
                       <div class="page-footer__in">
                           {{> footer footer=lang.en.footer common=lang.en.common}}
+                          {{> videomodal  videolang="eng"}}
                       </div>
                   </div>
               {{/ifpage}}
 
+
           </div>
 
       </div>
-
-      {{> videomodal  videolang="eng"}}
 
       <script src="{{root}}assets/js/app.js"></script>
 
