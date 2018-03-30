@@ -12,6 +12,30 @@
     align-items: center;
 
 
+    max-width: 1366px;
+
+    margin: 0 auto;
+
+    position: relative;
+
+    padding: 0 42px 0 66px;
+
+
+    @include breakpoint(smedium) {
+
+      padding: 0 64px 0 114px;
+
+    }
+
+
+    @include breakpoint(large) {
+
+      padding: 0 102px 0 114px;
+
+    }
+
+
+
     @include breakpoint(medium) {
 
       min-height: 130px;

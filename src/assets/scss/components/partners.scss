@@ -1,0 +1,178 @@
+.article-partners {
+
+  position: relative;
+
+  background: $white;
+
+  min-height: 1064px;
+
+
+
+
+  @include breakpoint(smedium) {
+
+    min-height: 688px;
+
+  }
+
+
+  @include breakpoint(medium) {
+
+    min-height: 496px;
+
+  }
+
+
+  .article-partners__in {
+
+    margin: 0 auto;
+
+    padding: 0 42px 0 66px;
+
+    max-width: 1366px;
+
+
+    @include breakpoint(smedium) {
+
+      padding: 0 64px 0 114px;
+
+    }
+
+
+    @include breakpoint(large) {
+
+      padding: 0 102px 0 114px;
+
+    }
+
+
+  }
+
+
+}
+
+
+
+.partners__wrapper {
+
+
+
+
+
+
+
+  .partners-title {
+
+    padding-top: 64px;
+
+    color: $black;
+
+    text-transform: uppercase;
+
+    font: normal 12px 'Stem-Regular', Arial, serif;
+
+  }
+
+
+}
+
+
+.partners-list {
+
+  display: block;
+
+  margin: -54px 0 0 0;
+
+  padding: 0;
+
+  list-style: none;
+
+  overflow: hidden;
+
+
+  .partner {
+
+    display: block;
+
+    float: left;
+
+    width: 239px;
+
+    min-height: 133px;
+
+    img {
+
+      height: 133px;
+
+    }
+
+
+    &.partner__type-deloitte {
+
+
+    }
+
+    &.partner__type-kpmg {
+
+       width: 218px;
+
+      /*img {
+
+         height: 135px;
+
+       }*/
+
+    }
+
+    &.partner__type-pwc {
+
+      &.partner__type-v {
+
+        display: none;
+
+        @include breakpoint(smedium only) {
+
+          display: block;
+
+          width: 265px;
+
+
+        }
+
+        img {
+
+          height: 250px;
+
+        }
+
+      }
+
+
+      &.partner__type-h {
+
+        width: 405px;
+
+        @include breakpoint(smedium only) {
+
+          display: none;
+
+
+        }
+
+      }
+
+
+
+    }
+
+    &.partner__type-ey {
+
+    }
+
+
+  }
+
+
+
+}
+
