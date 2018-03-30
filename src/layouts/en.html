@@ -53,21 +53,30 @@
 
                       </article>
 
-                      {{#ifpage 'place' 'contacts'}}
+
+                  </div>
+
+
+                  {{#ifpage 'partners'}}
+
+                  <div class="article-partners">
+                      <div class="article-partners__in">
+                          {{> article-partners}}
+                      </div>
+                  </div>
+
+
+
+                  {{/ifpage}}
+
+
+                  {{#ifpage 'place' 'contacts' 'partners'}}
 
                       <div class="article-footer">
                           <div class="article-footer__in">
                               {{> article-footer footer=lang.ru.footer common=lang.ru.common}}
                           </div>
                       </div>
-
-
-                      {{/ifpage}}
-
-
-                  </div>
-
-                  {{#ifpage 'place' 'contacts'}}
 
                     <div class="cathedral"></div>
 
