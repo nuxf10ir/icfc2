@@ -42,7 +42,7 @@
 
     letter-spacing: 1px;
 
-    margin-right: 56px;
+    margin-right: 51px;
 
     width: 100%;
 
@@ -80,6 +80,8 @@
     width: 100%;
 
     font-size: 27px;
+
+    letter-spacing: 0.8px;
 
 
     @include breakpoint(smedium) {
@@ -137,16 +139,14 @@
 
       position: absolute;
 
-      right: -36px;
+      right: -13px;
 
       top: 39px;
 
     }
 
 
-    font: normal 10px 'Stem-Regular', Arial, serif;
-
-    text-transform: uppercase;
+    font: normal 12px 'Stem-Regular', Arial, serif;
 
     color: $black;
 
@@ -155,38 +155,101 @@
 
       display: inline-block;
 
-      padding-top: 75px;
-
-      width: 144px;
-
-      background-position: 0 0;
-
-      background-repeat: no-repeat;
+      height: 90px;
 
       color: $black;
-
-      background-size: contain;
-
-      letter-spacing: 0.6px;
-
 
       &:hover {
         color: $dark-blue;
       }
 
 
+
       &.header-partner__type-organizer {
 
-        background: url('../img/organizer.svg') no-repeat 0px 17px;
+        margin-right: 34px;
 
-        margin-right: 40px;
+
+
+        .page__lang-rus & {
+
+
+          .partner-ico {
+
+            height: 34px;
+
+            margin-bottom: 26px;
+
+            margin-top: 15px;
+
+          }
+
+
+
+        }
+
+        .page__lang-eng & {
+
+
+          .partner-ico {
+
+            height: 34px;
+
+            margin-bottom: 20px;
+
+            margin-top: 21px;
+
+          }
+
+
+
+        }
+
+
+
+      }
+
+
+      .partner-ico,
+      .partner-title {
+
+        display: block;
+
+      }
+
+      .partner-title {
+
+        padding-left: 2px;
 
       }
 
 
       &.header-partner__type-partner {
 
-        background: url('../img/partner.svg') no-repeat -18px -5px;
+
+        .partner-ico {
+
+          margin-top: 3px;
+
+          margin-bottom: 15px;
+
+        }
+
+        .page__lang-rus &,
+        .page__lang-eng & {
+
+
+          .partner-ico {
+
+            height: 57px;
+
+          }
+
+
+
+        }
+
+
 
       }
 
@@ -242,11 +305,13 @@
 
     color: $black;
 
-    margin: 0 17px 0 0;
+    margin: 0 12px 0 0;
 
     white-space: nowrap;
 
     line-height: 25px;
+
+    letter-spacing: 0.8px;
 
 
     &:last-child {

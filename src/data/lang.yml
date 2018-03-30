@@ -32,11 +32,13 @@
     },
     "footer": {
       "photohistory": "Как это было в 2017",
-      "videoreport": "Видеоотчёт 2017"
+      "videoreport": "Видеоотчёт"
     },
     "common": {
       "organizer": "Организатор",
+      "organizerIco": "organizer.svg",
       "partner": "Генеральный партнер",
+      "partnerIco": "partner_rus.svg",
       "switch": "rus-eng",
       "switchto": "/en/"
     }
@@ -79,7 +81,9 @@
     },
     "common": {
       "organizer": "Organizer",
+      "organizerIco": "organizer.svg",
       "partner": "General Partner",
+      "partnerIco": "partner_eng.svg",
       "switch": "eng-rus",
       "switchto": "/"
     }

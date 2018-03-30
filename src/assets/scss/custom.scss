@@ -128,11 +128,11 @@
 
   position: relative;
 
-  background: #01247d;
-  background: -webkit-linear-gradient(left,#01247c,#0058c8);
-  background: -o-linear-gradient(left,#01247c,#0058c8);
-  background: -moz-linear-gradient(left,#01247c,#0058c8);
-  background: linear-gradient(to right, #01247c, #0058c8);
+  background: #0070ba; /* Old Browsers */
+  background: -webkit-linear-gradient(left,#0070ba,#3eb5e9); /*Safari 5.1-6*/
+  background: -o-linear-gradient(left,#0070ba,#3eb5e9); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(left,#0070ba,#3eb5e9); /*Fx 3.6-15*/
+  background: linear-gradient(to right, #0070ba, #3eb5e9); /*Standard*/
 
   -webkit-box-shadow: inset 0px 3px 6px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: inset 0px 3px 6px 0px rgba(0, 0, 0, 0.3);
