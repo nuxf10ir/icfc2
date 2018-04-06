@@ -60,9 +60,9 @@ title: Conference Venue
 
         // Info Window Content
         var infoWindowContent = [
-            ['<div class="info_content">' +
+            '<div class="info_content">' +
             '<h3>Four Seasons</h3>' +
-            '<p>Hotel Lion Palace</p><p>Санкт-Петербург, Вознесенский проспект, д.1</p></div>']
+            '<p>Hotel Lion Palace</p><p>Санкт-Петербург, Вознесенский проспект, д.1</p></div>'
         ];
 
         // Display multiple markers on a map
@@ -81,7 +81,7 @@ title: Conference Venue
         // Allow each marker to have an info window
         google.maps.event.addListener(marker, 'click', (function(marker) {
             return function() {
-                infoWindow.setContent(infoWindowContent[i][0]);
+                infoWindow.setContent(infoWindowContent[0]);
                 infoWindow.open(map, marker);
             }
         })(marker));
