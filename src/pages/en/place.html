@@ -40,7 +40,7 @@ title: Conference Venue
 
 
     var script = document.createElement('script');
-    script.src = "//maps.googleapis.com/maps/api/js?key=AIzaSyCuwqDrdb9woOE25ozoe7Fw_w9qbCf0A-8&callback=initialize";
+    script.src = "//maps.googleapis.com/maps/api/js?key=AIzaSyCuwqDrdb9woOE25ozoe7Fw_w9qbCf0A-8&language=en&callback=initialize";
     document.body.appendChild(script);
 
 
@@ -48,7 +48,10 @@ title: Conference Venue
         var map;
         var bounds = new google.maps.LatLngBounds();
         var mapOptions = {
-            mapTypeId: 'roadmap'
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+            }
         };
 
         // Display a map on the page
@@ -62,7 +65,7 @@ title: Conference Venue
         var infoWindowContent = [
             '<div class="info_content">' +
             '<h3>Four Seasons</h3>' +
-            '<p>Hotel Lion Palace</p><p>Санкт-Петербург, Вознесенский проспект, д.1</p></div>'
+            '<p>Hotel Lion Palace</p><p>1 Voznesensky Prospekt, St. Petersburg</p></div>'
         ];
 
         // Display multiple markers on a map

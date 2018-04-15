@@ -1,0 +1,95 @@
+.program__wrapper {
+
+  color: $white;
+
+  font: normal 17px 'Stem-Regular', Arial, serif;
+
+  max-width: 840px;
+
+  .program-block {
+
+    padding-bottom: 19px;
+
+  }
+
+  .program-item__type-title {
+
+    font: normal 26px 'Stem-Medium', Arial, serif;
+
+    text-transform: uppercase;
+
+  }
+
+
+
+
+  .program-print {
+
+    display: flex;
+
+    align-items: center;
+
+    margin: 53px 0 50px 0;
+
+
+    .print-button {
+
+      display: block;
+
+      width: 238px;
+
+      height: 62px;
+
+      flex-shrink: 0;
+
+      &.print-button__lang-ru {
+
+        background: url('/assets/img/print_ru.svg') no-repeat 0 0;
+
+
+        &:hover {
+
+          background: url('/assets/img/print-hover_ru.svg') no-repeat 0 0;
+
+        }
+
+
+      }
+
+      &.print-button__lang-en {
+
+        background: url('/assets/img/print_en.svg') no-repeat 0 0;
+
+
+        &:hover {
+
+          background: url('/assets/img/print-hover_en.svg') no-repeat 0 0;
+
+        }
+
+
+      }
+
+
+
+    }
+
+
+    .print-text {
+
+      max-width: 350px;
+
+      margin: 0 0 0 30px;
+
+      flex-shrink: 0;
+
+    }
+
+  }
+
+
+
+}
+
+
+

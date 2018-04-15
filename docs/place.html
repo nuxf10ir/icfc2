@@ -217,7 +217,7 @@
                           
                           
                               var script = document.createElement('script');
-                              script.src = "//maps.googleapis.com/maps/api/js?sensor=false&callback=initialize";
+                              script.src = "//maps.googleapis.com/maps/api/js?key=AIzaSyCuwqDrdb9woOE25ozoe7Fw_w9qbCf0A-8&language=ru&callback=initialize";
                               document.body.appendChild(script);
                           
                           
@@ -225,7 +225,10 @@
                                   var map;
                                   var bounds = new google.maps.LatLngBounds();
                                   var mapOptions = {
-                                      mapTypeId: 'roadmap'
+                                      mapTypeControl: true,
+                                      mapTypeControlOptions: {
+                                          style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+                                      }
                                   };
                           
                                   // Display a map on the page
@@ -237,9 +240,9 @@
                           
                                   // Info Window Content
                                   var infoWindowContent = [
-                                      ['<div class="info_content">' +
+                                      '<div class="info_content">' +
                                       '<h3>Four Seasons</h3>' +
-                                      '<p>Hotel Lion Palace</p><p>Санкт-Петербург, Вознесенский проспект, д.1</p></div>']
+                                      '<p>Hotel Lion Palace</p><p>Санкт-Петербург, Вознесенский проспект, д.1</p></div>'
                                   ];
                           
                                   // Display multiple markers on a map
@@ -258,7 +261,7 @@
                                   // Allow each marker to have an info window
                                   google.maps.event.addListener(marker, 'click', (function(marker) {
                                       return function() {
-                                          infoWindow.setContent(infoWindowContent[i][0]);
+                                          infoWindow.setContent(infoWindowContent[0]);
                                           infoWindow.open(map, marker);
                                       }
                                   })(marker));

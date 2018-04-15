@@ -1,0 +1,133 @@
+.speaker-slide {
+
+  min-height: 200px;
+
+  display: flex;
+
+
+
+
+
+  .speaker-info {
+
+    max-width: 400px;
+
+    flex-shrink: 0;
+
+    align-self: center;
+
+    margin: 0 0 0 33px;
+
+    color: $white;
+
+    .speaker-name {
+
+      font: normal 32px 'Lava-Bold', Arial, serif;
+
+      margin-bottom: 10px;
+
+    }
+
+    .speaker-pos {
+
+      max-width: 350px;
+
+      font: normal 19px 'Stem-Regular', Arial, serif;
+
+    }
+
+
+  }
+
+
+
+
+
+}
+
+
+.speakers-list {
+
+  max-width: 720px;
+
+  overflow: hidden;
+
+  margin: 70px 0 0 0;
+
+  padding: 0;
+
+  .speaker-item {
+
+    width: 100px;
+
+    height: 100px;
+
+    list-style: none;
+
+    float: left;
+
+    cursor: pointer;
+
+    margin: 0 40px 40px 0;
+
+  }
+
+
+
+}
+
+.speaker-photo {
+
+  position: relative;
+
+  flex-shrink: 0;
+
+  .speaker-slide & {
+
+    width: 200px;
+
+    height: 200px;
+
+  }
+
+  .speaker-item & {
+
+    width: 100px;
+
+    height: 100px;
+
+  }
+
+  .speaker-slide &,
+  .speaker-item &:hover,
+  .is-active & {
+
+    background: rgba(255, 255, 255, 0.5); /* Old Browsers */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)); /*Fx 3.6-15*/
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)); /*Standard*/
+
+    &:before {
+
+      content: '';
+
+      position: absolute;
+
+      bottom: 0;
+
+      height: 25px;
+      width: 100%;
+
+      border: 1px solid $white;
+      border-top: none !important;
+
+    }
+
+  }
+
+}
+
+.orbit-container {
+  margin: 0
+}
