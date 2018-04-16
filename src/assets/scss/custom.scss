@@ -187,19 +187,19 @@
 
     position: relative;
 
-    padding: 0 42px 0 66px;
+    padding: 0 42px 0px 66px;
 
 
     @include breakpoint(smedium) {
 
-      padding: 0 64px 0 114px;
+      padding: 0 64px 0px 114px;
 
     }
 
 
     @include breakpoint(large) {
 
-      padding: 0 102px 0 114px;
+      padding: 0 102px 50px 114px;
 
     }
 
