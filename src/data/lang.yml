@@ -41,6 +41,10 @@
       "partnerIco": "partner_rus.svg",
       "switch": "rus-eng",
       "switchto": "/en/"
+    },
+    "partners": {
+      "edu": "Образовательный партнер",
+      "stem": "Партнеры круглых столов",
     }
   },
 
@@ -86,6 +90,10 @@
       "partnerIco": "partner_eng.svg",
       "switch": "eng-rus",
       "switchto": "/"
+    },
+    "partners": {
+      "edu": "Educational partner",
+      "stem": "Round stem partners",
     }
   }
 }
