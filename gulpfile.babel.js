@@ -48,6 +48,13 @@ function copy() {
     .pipe(gulp.dest(PATHS.dist + '/assets'));
 }
 
+function favcopy() {
+  return gulp.src(PATHS.favicon)
+    .pipe(gulp.dest(PATHS.dist + '/'));
+}
+
+
+
 // Copy page templates into finished HTML files
 function pages() {
   return gulp.src('src/pages/**/*.{html,hbs,handlebars}')
@@ -153,6 +160,7 @@ function reload(done) {
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {
   gulp.watch(PATHS.assets, copy);
+  gulp.watch(PATHS.favicon, favcopy);
   gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, browser.reload));
   gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);

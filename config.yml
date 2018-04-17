@@ -20,6 +20,8 @@ PATHS:
   # Path to dist folder
   dist: "dist"  
   # Paths to static assets that aren't images, CSS, or JavaScript
+  favicon:
+    - "favicon.ico"
   assets:
     - "src/assets/**/*"
     - "!src/assets/{img,js,scss}{,/**/*}"
