@@ -6,6 +6,12 @@
 
   max-width: 840px;
 
+  @include breakpoint(small only) {
+
+    margin-bottom: 400px;
+
+  }
+
   .program-block {
 
     padding-bottom: 19px;
@@ -27,9 +33,19 @@
 
     display: flex;
 
-    align-items: center;
+    align-items: left;
+
+    flex-flow: column;
 
     margin: 53px 0 50px 0;
+
+    @include breakpoint(medium) {
+
+      align-items: center;
+
+      flex-flow: row;
+
+    }
 
 
     .print-button {
@@ -81,9 +97,18 @@
 
       max-width: 350px;
 
-      margin: 0 0 0 30px;
+      margin: 20px 0 0 0;
 
       flex-shrink: 0;
+
+      @include breakpoint(medium) {
+
+
+
+        margin: 0 0 0 30px;
+
+
+      }
 
     }
 
